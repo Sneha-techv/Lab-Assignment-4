@@ -1,33 +1,39 @@
-# Student Record Management with File Persistence
+Student Record Management System
 
-## What this project does
-- Loads `students.txt` at startup (CSV records)
-- Allows adding, viewing, searching, deleting, sorting students
-- Saves updated records to `students.txt` on exit
-- Demonstrates: BufferedReader/Writer, RandomAccessFile, Comparator, Iterator
 
-## How to compile & run
-From project root (where `src/` and `students.txt` are located):
+Name: Sneha Gupta
 
-### macOS / Linux:
-```
-mkdir -p out
-find src -name "*.java" > sources.txt
-javac -d out @sources.txt
-java -cp out main.App
-```
 
-### Windows (PowerShell):
-```
-New-Item -ItemType Directory -Path out -Force
-Get-ChildItem -Path .\src -Filter *.java -Recurse | ForEach-Object { $_.FullName } > sources.txt
-javac -d out @sources.txt
-java -cp out main.App
-```
+Roll No: 2401010020
 
-## File format (students.txt)
-Each line: roll,name,email,course,marks
 
-Example:
-101,Ankit,ankit@mail.com,B.Tech,85.5
-102,Riya,riya@mail.com,M.Tech,91.0
+This project is a simple Java-based Student Record Management System using File Handling. It allows you to:
+
+Add new student records
+
+Display all records
+
+Search by roll number
+
+Delete a record
+
+Sort students by marks
+
+Load & save data using a text file
+
+The program uses:
+
+BufferedReader / BufferedWriter
+
+RandomAccessFile
+
+ArrayList & Iterator
+
+Packages: model, service, util, main
+
+**** How to RUN?? ****
+
+javac src/main/App.java
+
+
+java main.App
